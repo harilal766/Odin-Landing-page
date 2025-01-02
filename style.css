@@ -1,4 +1,4 @@
-* { border: 1px solid green;}
+/* { border: 1px solid green;} */ 
 
 
 
@@ -7,6 +7,7 @@
     color: white;
     flex:1;
     display: flex; flex-direction: column;
+    margin: 0; padding: 0;
 }
 
 
@@ -17,17 +18,18 @@
 
 
 
-
+/* Header and hero */
 .header, .hero {
-    margin: 0 50px 0 50px;
+    margin:0;
+    padding:0 50px 50px 50px;
 }
 .header, .hero, .footer {
     background-color: #1F2937;
 }
+
 .header {
     display: flex;
     justify-content: space-between;
-    padding-left: 8px;
 }
 ul {
     list-style: none;
@@ -35,15 +37,12 @@ ul {
     gap: 16px;
 }
 
-
-
-
-
-
 /* Hero */
 .hero {
     display: flex; 
+    justify-content: space-between;
 }
+
 
 .left-hero h1{
     font-size: 48px;
@@ -55,10 +54,18 @@ ul {
     font-size: 18px;
 }
 
+/* Common button styles */
 button {
     background-color: #3882F6;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 5px 18px 5px 18px;
 }
 
+.left-hero button{
+    color: #E5E7EB;
+    border: 1px solid #3882F6;
+}
 .right-hero {
     background-color: aqua;
     height: 200px; width: 500px;
@@ -71,25 +78,26 @@ button {
 
 
 /* Info */
-.boxes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-}
-.box {
-    display: flex; flex-direction: column;
-}
-
 .info {
     color: black;
     display: flex; flex-direction: column;
     align-items: center;
+    margin: 50px;
 }
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
 
+}
+.box {
+    display: flex; flex-direction: column;
+    align-items: center;
+}
 .info-image {
-    border: 1px solid  #3882F6;
-    height: 90px; width: 90px;
+    border: 2px solid  #3882F6;
+    height: 140px; width: 140px;
     border-radius: 5px;
 }
 
@@ -146,12 +154,10 @@ button {
     display: flex;
     align-items: center;
 }
+
 .blue-rectangle button{
     border: 1px solid white;
-    border-radius: 5px;
-    font-weight: bold;
     color: #E5E7EB;
-    padding: 5px 18px 5px 18px;
 }
 
 
