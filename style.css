@@ -59,7 +59,6 @@ button {
     background-color: #3882F6;
 }
 
-
 .right-hero {
     background-color: aqua;
     height: 200px; width: 500px;
@@ -72,8 +71,14 @@ button {
 
 
 /* Info */
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
 .box {
-    display: flex; flex-direction: row;
+    display: flex; flex-direction: column;
 }
 
 .info {
@@ -84,7 +89,7 @@ button {
 
 .info-image {
     border: 1px solid  #3882F6;
-    height: 50px; width: 50px;
+    height: 90px; width: 90px;
     border-radius: 5px;
 }
 
@@ -96,7 +101,9 @@ button {
 
 
 /* Quote */
+
 .quote-wrapper {
+    padding: 50px;
     height: auto;
     background-color: #E5E7EB;
 }
@@ -109,6 +116,7 @@ button {
 
 .quote-wrapper h4 {
     color: #1F2937;
+    margin-left: 70%;
 }
 
 
