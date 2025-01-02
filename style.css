@@ -1,4 +1,4 @@
-/* { border: 1px solid green;} */ 
+.hero * { border: 1px solid green;} *
 
 
 
@@ -41,6 +41,7 @@ ul {
 .hero {
     display: flex; 
     justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -67,7 +68,7 @@ button {
     border: 1px solid #3882F6;
 }
 .right-hero {
-    background-color: aqua;
+    background-color: gray;
     height: 200px; width: 500px;
 }
 
